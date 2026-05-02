@@ -1,0 +1,13 @@
+{
+  "name": "nexusplan-mern",
+  "version": "1.0.0",
+  "description": "Project Management App",
+  "scripts": {
+    "start": "cd backend && node server.js",
+    "build": "cd frontend && npm install && npm run build && cd ../backend && npm install",
+    "dev": "concurrently \"cd frontend && npm run dev\" \"cd backend && npm run dev\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
